@@ -24,7 +24,11 @@ public class StartScreen extends AppCompatActivity {
     }
 
     public void tampilNotification(View view) {
+
+
         Intent intent = new Intent(StartScreen.this, HomeActivity.class);
+
+
         startActivity(intent);
 /*
 Menmbangun atau mensetup Notification dengan NotificationCompat.Builder

@@ -38,6 +38,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.insert("WISATA", NAMA, cv);
         cv.put(NAMA, "Kampung Gajah");
         db.insert("WISATA", NAMA, cv);
+        cv.put(NAMA, "Trans Studio");
+        db.insert("WISATA", NAMA, cv);
 
     }
 

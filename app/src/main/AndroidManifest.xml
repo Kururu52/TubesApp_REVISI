@@ -35,6 +35,29 @@
         <activity android:name=".ListViewSQliteActivity">
         </activity>
 
+        <activity android:name=".Feedback">
+        </activity>
+
+        <activity android:name=".About">
+        </activity>
+
+
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBWFCgN4Sjn0KxtfCbNLK8Y-KnmvsVMUDM" />
+
+        <activity
+            android:name=".Maps"
+            android:label="MAPS">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

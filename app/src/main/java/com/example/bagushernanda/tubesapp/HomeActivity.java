@@ -35,7 +35,7 @@ public class HomeActivity  extends Activity {
         //inisialisai tombol pada dasboard
         Button btncafe = (Button) findViewById(R.id.btnCafe);
         Button btnwisata = (Button) findViewById(R.id.btnWisata);
-        Button btnlogin = (Button) findViewById(R.id.btnLogin);
+        Button btnmaps = (Button) findViewById(R.id.btnMaps);
         Button btnfeedback = (Button) findViewById(R.id.btnFeedback);
         Button btnshare = (Button) findViewById(R.id.btnSetting);
         Button btnabout = (Button) findViewById(R.id.btnAbout);
@@ -54,19 +54,19 @@ public class HomeActivity  extends Activity {
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, ListViewSQliteActivity.class));
             }});
-        btnlogin.setOnClickListener(new OnClickListener(){
+        btnmaps.setOnClickListener(new OnClickListener(){
             public void onClick(View v){
-               // startActivity(new Intent(HomeActivity.this, LoginForm.class));
+               startActivity(new Intent(HomeActivity.this, Maps.class));
             }
         });
 
         btnabout.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(HomeActivity.this, "Tombol About",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(HomeActivity.this, About.class));
             }});
         btnfeedback.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(HomeActivity.this, "Tombol FeedBack",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(HomeActivity.this, Feedback.class));
             }});
 
         btnshare.setOnClickListener(new OnClickListener() {
